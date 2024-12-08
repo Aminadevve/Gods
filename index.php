@@ -13,8 +13,10 @@
 
        switch ($choice) {
            case 1:
-               // Ввод чисел (реализуем позже)
-               break;
+                $num1 = readline("Введите первое число: ");
+                $num2 = readline("Введите второе число: ");
+                echo "Вы ввели: $num1 и $num2\n";
+                break;
            case 2:
                // Сложение (реализуем позже)
                break;
