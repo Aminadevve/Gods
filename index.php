@@ -33,8 +33,19 @@
             echo "Разность: $difference\n";
                            break;
            case 4:
-               // Деление (реализуем позже)
-               break;
+            $num1 = readline("Введите первое число: ");
+            $num2 = readline("Введите второе число: ");
+            if (!is_numeric($num1) || !is_numeric($num2)) {
+                echo "Ошибка: Введите числовые значения.\n";
+                continue;
+            }
+            if ($num2 == 0) {
+                echo "Ошибка: Деление на ноль невозможно.\n";
+                continue;
+            }
+            $quotient = $num1 / $num2;
+            echo "Частное: $quotient\n";
+                           break;
            case 5:
                // Возведение в степень (реализуем позже)
                break;
