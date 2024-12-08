@@ -47,8 +47,15 @@
             echo "Частное: $quotient\n";
                            break;
            case 5:
-               // Возведение в степень (реализуем позже)
-               break;
+            $base = readline("Введите основание: ");
+            $exponent = readline("Введите показатель степени: ");
+            if (!is_numeric($base) || !is_numeric($exponent)) {
+                echo "Ошибка: Введите числовые значения.\n";
+                continue;
+            }
+            $result = pow($base, $exponent);
+            echo "Результат: $result\n";
+                           break;
            case 6:
                exit;
            default:
