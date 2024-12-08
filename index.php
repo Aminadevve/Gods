@@ -23,8 +23,15 @@
             $sum = $num1 + $num2;
             echo "Сумма: $sum\n";               break;
            case 3:
-               // Вычитание (реализуем позже)
-               break;
+            $num1 = readline("Введите первое число: ");
+            $num2 = readline("Введите второе число: ");
+            if (!is_numeric($num1) || !is_numeric($num2)) {
+                echo "Ошибка: Введите числовые значения.\n";
+                continue;
+            }
+            $difference = $num1 - $num2;
+            echo "Разность: $difference\n";
+                           break;
            case 4:
                // Деление (реализуем позже)
                break;
